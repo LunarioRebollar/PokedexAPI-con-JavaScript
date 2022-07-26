@@ -1,0 +1,78 @@
+form {
+    width: 175px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 20px auto;
+}
+
+.data-poke-name{
+    font-size: 25px;
+}
+
+.poke-card {
+    position: relative;
+    height: fit-content;
+    font-family: sans-serif;
+    max-width: 500px;
+    border-radius: 6px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #FFF;
+    border: 3px solid black;
+}
+
+.poke-card::before {
+    content: '';
+    background: radial-gradient(white 33%, transparent 33%);
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+.img-container {
+    position: center;
+    width: 180px;
+    margin: 10px auto;
+}
+
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.poke-types div {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 4px dashed red;
+    font-size: 18px;
+}
+
+.poke-img {
+    width: 250px;
+    border-radius: 100%;
+}
+
+body {
+    margin: 0;
+    padding-top: 60px;
+    height: 100vh;
+    background: #ffca00 url("../images/pokedex-wallpaper.jpg") center bottom no-repeat;
+    background-size: cover;
+    font-family: 'Consolas', Helvetica;
+}
+
+.mostrar {
+    width: 100%;
+    padding: 10px;
+}
